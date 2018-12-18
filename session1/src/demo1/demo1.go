@@ -5,8 +5,12 @@ import "fmt"
 func main() {
 	fmt.Println("Hello")
 	// Demo13()
-	r1, r2, r3, r4 := calculate(10, 4)
-	fmt.Printf("r1= %d, r2= %d, r3=%d, r4=%f", r1, r2, r3, r4)
+	r1, r2, r3, r4 := calculate2(10, 4)
+	fmt.Printf("r1= %d, r2= %d, r3= %d, r4= %f", r1, r2, r3, r4)
+
+	display2(1, 2)
+	display2(2, 3, 4)
+	display2(2, 3, 4, 5)
 }
 
 func Demo1() {
@@ -179,10 +183,25 @@ func sum(a, b int) int {
 	return a + b
 }
 
-func calculate(a, b int) (int, int, int, float32) {
+func calculate1(a, b int) (int, int, int, float32) {
 	result1 := a + b
 	result2 := a - b
 	result3 := a * b
 	result4 := float32(a) / float32(b)
 	return result1, result2, result3, result4
+}
+
+func calculate2(a, b int) (result1 int, result2 int, result3 int, result4 float32) {
+	result1 = a + b
+	result2 = a - b
+	result3 = a * b
+	result4 = float32(a) / float32(b)
+	return
+}
+
+func display2(args ...int) {
+	fmt.Println("Size: ", len(args))
+	for i := 0; i < len(args); i++ {
+		fmt.Print("  ", args[i])
+	}
 }
