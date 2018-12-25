@@ -38,3 +38,22 @@ func Demo3() {
 	delete(student, "address")
 	fmt.Println(student)
 }
+
+func Demo4() {
+	categories := map[string][]string{
+		"categories1": []string{"prod1", "prod2", "prod3"},
+		"categories2": []string{"prod4", "prod5", "prod6"},
+		"categories3": []string{"prod7", "prod8", "prod9"},
+	}
+	categories["categories4"] = []string{"prod10", "prod11"}
+	res := append(categories["categories2"], "prod6.1")
+	fmt.Println(res)
+	fmt.Println(categories)
+
+	for key, value := range categories {
+		fmt.Println(key)
+		for _, v := range value {
+			fmt.Println("\t", v)
+		}
+	}
+}

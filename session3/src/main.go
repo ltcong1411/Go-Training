@@ -3,7 +3,7 @@ package main
 import "demo_map"
 
 func main() {
-	demo_map.Demo3()
+	demo_map.Demo4()
 }
 
 /*
