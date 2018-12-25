@@ -46,8 +46,7 @@ func Demo4() {
 		"categories3": []string{"prod7", "prod8", "prod9"},
 	}
 	categories["categories4"] = []string{"prod10", "prod11"}
-	res := append(categories["categories2"], "prod6.1")
-	fmt.Println(res)
+	categories["categories2"] = append(categories["categories2"], "prod6.1")
 	fmt.Println(categories)
 
 	for key, value := range categories {
