@@ -1,7 +1,7 @@
 package main
 
-import "session4/demo_date"
+import "session4/demo_pointer"
 
 func main() {
-	demo_date.AgeCal("27/12/1995")
+	demo_pointer.Demo()
 }
