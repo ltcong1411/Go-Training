@@ -6,6 +6,28 @@ import (
 )
 
 func main() {
+<<<<<<< HEAD
+	Demo()
+}
+
+// func Demo1() {
+// 	student1 := entities.Student("st01", "Nghia", 22)
+// 	fmt.Println(student1.ToString())
+// }
+
+// func Demo2() {
+// 	product1 := entities.Product("p1", "name 1", 20, 5)
+// 	product2 := entities.Product("p2", "name 2", 22, 6)
+// 	fmt.Println("Product 1 Info")
+// 	fmt.Println(product1.ToString())
+// }
+
+func Demo() {
+	student := entities.Student("st01", "Nghia", 22)
+	fmt.Println(student.ToString())
+}
+ere
+=======
 	Demo8()
 }
 
@@ -92,3 +114,4 @@ func Demo8() {
 		fmt.Println("---------------")
 	}
 }
+>>>>>>> b16df0e3461b618480359a36a8992fd0fd167abc
